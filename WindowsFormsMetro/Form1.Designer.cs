@@ -29,34 +29,23 @@
         private void InitializeComponent()
         {
             this.Button_Login = new MetroFramework.Controls.MetroButton();
-            this.Button_Register = new MetroFramework.Controls.MetroButton();
             this.Textbox_Username = new MetroFramework.Controls.MetroTextBox();
             this.Textbox_Password = new MetroFramework.Controls.MetroTextBox();
             this.Username = new MetroFramework.Drawing.Html.HtmlLabel();
             this.htmlLabel2 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // Button_Login
             // 
             this.Button_Login.CausesValidation = false;
-            this.Button_Login.Location = new System.Drawing.Point(283, 315);
+            this.Button_Login.Location = new System.Drawing.Point(143, 315);
             this.Button_Login.Name = "Button_Login";
             this.Button_Login.Size = new System.Drawing.Size(180, 29);
             this.Button_Login.TabIndex = 0;
             this.Button_Login.Text = "登陆";
             this.Button_Login.UseSelectable = true;
             this.Button_Login.Click += new System.EventHandler(this.Button_Login_Click);
-            // 
-            // Button_Register
-            // 
-            this.Button_Register.CausesValidation = false;
-            this.Button_Register.Location = new System.Drawing.Point(48, 315);
-            this.Button_Register.Name = "Button_Register";
-            this.Button_Register.Size = new System.Drawing.Size(110, 29);
-            this.Button_Register.TabIndex = 1;
-            this.Button_Register.Text = "注册";
-            this.Button_Register.UseSelectable = true;
-            this.Button_Register.Click += new System.EventHandler(this.Button_Register_Click);
             // 
             // Textbox_Username
             // 
@@ -146,32 +135,45 @@
             this.htmlLabel2.TabIndex = 7;
             this.htmlLabel2.Text = "密码";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(60, 332);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(29, 12);
+            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "注册";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 383);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.htmlLabel2);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.Textbox_Password);
             this.Controls.Add(this.Textbox_Username);
-            this.Controls.Add(this.Button_Register);
             this.Controls.Add(this.Button_Login);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "欢迎来到13水";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private MetroFramework.Controls.MetroButton Button_Login;
-        private MetroFramework.Controls.MetroButton Button_Register;
         private MetroFramework.Controls.MetroTextBox Textbox_Username;
         private MetroFramework.Controls.MetroTextBox Textbox_Password;
         private MetroFramework.Drawing.Html.HtmlLabel Username;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

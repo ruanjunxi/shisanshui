@@ -68,6 +68,13 @@
   <ItemGroup>
     <Compile Include="AI_Helper.cs" />
     <Compile Include="APIHelper.cs" />
+    <Compile Include="Battal_Detail_Info.cs" />
+    <Compile Include="battle_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="battle_detail.Designer.cs">
+      <DependentUpon>battle_detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Battle_Online.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +101,12 @@
     <Compile Include="FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_History_Combat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_History_Combat.Designer.cs">
+      <DependentUpon>Form_History_Combat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Rank.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,7 +114,14 @@
       <DependentUpon>Form_Rank.cs</DependentUpon>
     </Compile>
     <Compile Include="json.cs" />
+    <Compile Include="military_exploits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="military_exploits.Designer.cs">
+      <DependentUpon>military_exploits.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mycard.cs" />
+    <Compile Include="Player_History.cs" />
     <Compile Include="Play_Rank_Info.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,6 +133,9 @@
     </Compile>
     <Compile Include="User.cs" />
     <Compile Include="User_With_Token.cs" />
+    <EmbeddedResource Include="battle_detail.resx">
+      <DependentUpon>battle_detail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Battle_Online.resx">
       <DependentUpon>Battle_Online.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,8 +148,14 @@
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_History_Combat.resx">
+      <DependentUpon>Form_History_Combat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Rank.resx">
       <DependentUpon>Form_Rank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="military_exploits.resx">
+      <DependentUpon>military_exploits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,6 +170,7 @@
     <EmbeddedResource Include="Sendcard.resx">
       <DependentUpon>Sendcard.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -160,6 +190,16 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\online_battal_click.png" />
+    <Content Include="Resources\timg.png" />
+    <Content Include="Resources\小黑.png" />
+    <None Include="Resources\online_battla_click.png" />
+    <Content Include="Resources\online_battla_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\card\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

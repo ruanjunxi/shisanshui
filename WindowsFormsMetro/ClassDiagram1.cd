@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="已有账号可直接登陆，登陆成功后转到主窗体">
+    <Position X="13.647" Y="2.388" Height="0.803" Width="0.976" />
+  </Comment>
+  <Comment CommentText="注册完成后即可登陆">
+    <Position X="14.824" Y="0.707" Height="0.545" Width="1.186" />
+  </Comment>
+  <Comment CommentText="程序入口点">
+    <Position X="11.303" Y="0.55" Height="0.312" Width="0.974" />
+  </Comment>
+  <Comment CommentText="点击查看排行，即可查看当前排名情况">
+    <Position X="13.575" Y="4.086" Height="0.709" Width="1.227" />
+  </Comment>
+  <Comment CommentText="点击在线对战，进入对战界面">
+    <Position X="15.813" Y="4.081" Height="0.57" Width="1.085" />
+  </Comment>
+  <Comment CommentText="点击查看历史战局，并输入想要查询用户的ID，即可查看。（默认是当前账号的ID）">
+    <Position X="8.623" Y="3.625" Height="0.862" Width="1.572" />
+  </Comment>
+  <Comment CommentText="在排行榜中也能点击用户ID进行查看他的历史战绩">
+    <Position X="11.344" Y="4.183" Height="0.734" Width="1.451" />
+  </Comment>
+  <Comment CommentText="在某人的历史战局中，点击战局ID即可查看那局游戏的详细信息">
+    <Position X="8.118" Y="6.301" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="点击寻找战局，然后点击出牌，即可">
+    <Position X="16.165" Y="6.239" Height="0.549" Width="1.7" />
+  </Comment>
+  <Comment CommentText="在此框输入战局ID">
+    <Position X="6.329" Y="4.321" Height="0.485" Width="1.547" />
+  </Comment>
+  <Class Name="WindowsFormsMetro.AI_Helper" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIIAAAAAAAAAAAAhAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>AI_Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.APIHelper" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>APIHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.Battal_Detail_Info" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAABAAAAAIAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Battal_Detail_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.battle_detail" Collapsed="true">
+    <Position X="12.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAA6BAAAQAAAAAAAAAA=</HashCode>
+      <FileName>battle_detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.Battle_Online" Collapsed="true">
+    <Position X="15" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAAACAAAAAAAAGAAEACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Battle_Online.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Sendcard" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WindowsFormsMetro.CardModel" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Card_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.TypeCard" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Card_Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.Discard" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAACAAAAAAAABAAAAIAAAgA=</HashCode>
+      <FileName>Discard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.Form_History_Combat" Collapsed="true">
+    <Position X="9.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAICAAAQAAAACAAAACAAA4BAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Form_History_Combat.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="battle_detail" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WindowsFormsMetro.Form_Rank" Collapsed="true">
+    <Position X="12.5" Y="5" Width="1.5" />
+    <AssociationLine Name="a" Type="WindowsFormsMetro.Form_History_Combat">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.116" Y="-0.877" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAASAAAAAAAACAAAACAAA4AIAgAAAAAAAAAAA=</HashCode>
+      <FileName>Form_Rank.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="a" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WindowsFormsMetro.Form1" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgACAQAAgAAQCQAgICAAAAEgBAIAQEAAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FormMain" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WindowsFormsMetro.FormMain" Collapsed="true">
+    <Position X="12.5" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Form_History_Combat" Type="WindowsFormsMetro.Form_History_Combat" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="3.344" />
+        <Point X="10.25" Y="3.344" />
+        <Point X="10.25" Y="5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAKAgQAACAAAJAABAGAAAACAAAEAEkAAAAAAAAKAAA=</HashCode>
+      <FileName>FormMain.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Form_Rank" />
+      <Property Name="Battle_Online" />
+      <Property Name="Form_History_Combat" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WindowsFormsMetro.FormRegister" Collapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAgACAAAAiAAQCyAAAiAAAABgAAAAAAAAQAAAA=</HashCode>
+      <FileName>FormRegister.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Form1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WindowsFormsMetro.json" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>json.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.military_exploits" Collapsed="true">
+    <Position X="6.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQQABCAAAJAAAACAAAASAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>military_exploits.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Form_History_Combat" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WindowsFormsMetro.MyCard" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgIAAAAAAAAAAAEAAEAAAAAAAQAAAAAAAACAgA=</HashCode>
+      <FileName>Mycard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.Play_Rank_Info" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Play_Rank_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.Player_History" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAgAIAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Player_History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.play_info" Collapsed="true">
+    <Position X="0.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Player_History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.Program" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Form1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WindowsFormsMetro.Sendcard" Collapsed="true">
+    <Position X="15" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEByDAgAACAKAAAAAAGAAAACDwAIAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Sendcard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.User" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.User_With_Token" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAEAAAAAAAAAAAAAAgABAAA=</HashCode>
+      <FileName>User_With_Token.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAACAIAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsMetro.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="WindowsFormsMetro.DeckTypeEnum" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAABYAAkAAgAACAAIACAAAAAAAAAAEAACA=</HashCode>
+      <FileName>Card_Model.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

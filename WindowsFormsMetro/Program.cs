@@ -8,6 +8,14 @@ namespace WindowsFormsMetro
 {
     static class Program
     {
+        public static Form1 Form1
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
