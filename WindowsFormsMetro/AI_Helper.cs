@@ -731,16 +731,6 @@ namespace WindowsFormsMetro
 
             }
 
-            if (KingNum >= 1)
-            {
-                //不需要
-            }
-
-            if (KingNum == 2)
-            {
-                //不需要
-            }
-
             #endregion
 
             #region 对子

@@ -52,8 +52,10 @@
       <HintPath>packages\RestSharp.106.6.10\lib\net452\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -192,6 +194,58 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\102.JPG" />
+    <Content Include="Resources\103.JPG" />
+    <Content Include="Resources\104.JPG" />
+    <Content Include="Resources\105.JPG" />
+    <Content Include="Resources\106.JPG" />
+    <Content Include="Resources\107.JPG" />
+    <Content Include="Resources\108.JPG" />
+    <Content Include="Resources\109.JPG" />
+    <Content Include="Resources\110.JPG" />
+    <Content Include="Resources\111.JPG" />
+    <Content Include="Resources\112.JPG" />
+    <Content Include="Resources\113.JPG" />
+    <Content Include="Resources\114.JPG" />
+    <Content Include="Resources\202.JPG" />
+    <Content Include="Resources\203.JPG" />
+    <Content Include="Resources\204.JPG" />
+    <Content Include="Resources\205.JPG" />
+    <Content Include="Resources\206.JPG" />
+    <Content Include="Resources\207.JPG" />
+    <Content Include="Resources\208.JPG" />
+    <Content Include="Resources\209.JPG" />
+    <Content Include="Resources\210.JPG" />
+    <Content Include="Resources\211.JPG" />
+    <Content Include="Resources\212.JPG" />
+    <Content Include="Resources\213.JPG" />
+    <Content Include="Resources\214.JPG" />
+    <Content Include="Resources\302.JPG" />
+    <Content Include="Resources\303.JPG" />
+    <Content Include="Resources\304.JPG" />
+    <Content Include="Resources\305.JPG" />
+    <Content Include="Resources\306.JPG" />
+    <Content Include="Resources\307.JPG" />
+    <Content Include="Resources\308.JPG" />
+    <Content Include="Resources\309.JPG" />
+    <Content Include="Resources\310.JPG" />
+    <Content Include="Resources\311.JPG" />
+    <Content Include="Resources\312.JPG" />
+    <Content Include="Resources\313.JPG" />
+    <Content Include="Resources\314.JPG" />
+    <Content Include="Resources\402.JPG" />
+    <Content Include="Resources\403.JPG" />
+    <Content Include="Resources\404.JPG" />
+    <Content Include="Resources\405.JPG" />
+    <Content Include="Resources\406.JPG" />
+    <Content Include="Resources\407.JPG" />
+    <Content Include="Resources\408.JPG" />
+    <Content Include="Resources\409.JPG" />
+    <Content Include="Resources\410.JPG" />
+    <Content Include="Resources\411.JPG" />
+    <Content Include="Resources\412.JPG" />
+    <Content Include="Resources\413.JPG" />
+    <Content Include="Resources\414.JPG" />
     <Content Include="Resources\online_battal_click.png" />
     <Content Include="Resources\timg.png" />
     <Content Include="Resources\小黑.png" />
@@ -199,7 +253,7 @@
     <Content Include="Resources\online_battla_hover.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\card\" />
+    <Folder Include="Resources\card\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

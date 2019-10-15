@@ -117,7 +117,7 @@
   <Class Name="WindowsFormsMetro.Form1" Collapsed="true">
     <Position X="12.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAgACAQAAgAAQCQAgICAAAAEgBAIAQEAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAgACAAAAgAAQSQAgICAAAgEgBAIAQAAABAAAA=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -134,7 +134,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>CAAKAgQAACAAAJAABAGAAAACAAAEAEkAAAAAAAAKAAA=</HashCode>
+      <HashCode>CAAKAAQAACAAAJAABAGAAAACAAAEAEkAAAAAAAAKAAA=</HashCode>
       <FileName>FormMain.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -211,7 +211,7 @@
   <Class Name="WindowsFormsMetro.Sendcard" Collapsed="true">
     <Position X="15" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEByDAgAACAKAAAAAAGAAAACDwAIAAAAAAAAAAAAAEA=</HashCode>
+      <HashCode>AEByDAgAACAKAAAAAAGAAAACDwAJAAAAAAAAAAAAAEA=</HashCode>
       <FileName>Sendcard.cs</FileName>
     </TypeIdentifier>
   </Class>
