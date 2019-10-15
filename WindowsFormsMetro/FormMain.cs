@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsMetro
 {
-    public partial class FormMain : MetroForm
+    public partial class FormMain : Form
     {
         int count = 0;//窗口数量
         public FormMain()
@@ -48,7 +48,7 @@ namespace WindowsFormsMetro
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            skinPictureBox1.SendToBack();
+          
 
         }
 

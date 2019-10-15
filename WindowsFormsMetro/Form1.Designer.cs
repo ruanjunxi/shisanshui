@@ -28,20 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Button_Login = new MetroFramework.Controls.MetroButton();
             this.Textbox_Username = new MetroFramework.Controls.MetroTextBox();
             this.Textbox_Password = new MetroFramework.Controls.MetroTextBox();
             this.Username = new MetroFramework.Drawing.Html.HtmlLabel();
             this.htmlLabel2 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Button_Login
             // 
             this.Button_Login.CausesValidation = false;
-            this.Button_Login.Location = new System.Drawing.Point(143, 315);
+            this.Button_Login.Location = new System.Drawing.Point(175, 566);
             this.Button_Login.Name = "Button_Login";
-            this.Button_Login.Size = new System.Drawing.Size(180, 29);
+            this.Button_Login.Size = new System.Drawing.Size(164, 29);
             this.Button_Login.TabIndex = 0;
             this.Button_Login.Text = "登陆";
             this.Button_Login.UseSelectable = true;
@@ -53,7 +56,7 @@
             // 
             // 
             this.Textbox_Username.CustomButton.Image = null;
-            this.Textbox_Username.CustomButton.Location = new System.Drawing.Point(158, 1);
+            this.Textbox_Username.CustomButton.Location = new System.Drawing.Point(141, 1);
             this.Textbox_Username.CustomButton.Name = "";
             this.Textbox_Username.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.Textbox_Username.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -63,7 +66,7 @@
             this.Textbox_Username.CustomButton.Visible = false;
             this.Textbox_Username.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.Textbox_Username.Lines = new string[0];
-            this.Textbox_Username.Location = new System.Drawing.Point(143, 120);
+            this.Textbox_Username.Location = new System.Drawing.Point(176, 440);
             this.Textbox_Username.MaxLength = 32767;
             this.Textbox_Username.Name = "Textbox_Username";
             this.Textbox_Username.PasswordChar = '\0';
@@ -72,7 +75,7 @@
             this.Textbox_Username.SelectionLength = 0;
             this.Textbox_Username.SelectionStart = 0;
             this.Textbox_Username.ShortcutsEnabled = true;
-            this.Textbox_Username.Size = new System.Drawing.Size(180, 23);
+            this.Textbox_Username.Size = new System.Drawing.Size(163, 23);
             this.Textbox_Username.TabIndex = 2;
             this.Textbox_Username.UseSelectable = true;
             this.Textbox_Username.WaterMarkColor = System.Drawing.Color.Black;
@@ -85,7 +88,7 @@
             // 
             // 
             this.Textbox_Password.CustomButton.Image = null;
-            this.Textbox_Password.CustomButton.Location = new System.Drawing.Point(167, 1);
+            this.Textbox_Password.CustomButton.Location = new System.Drawing.Point(141, 1);
             this.Textbox_Password.CustomButton.Name = "";
             this.Textbox_Password.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.Textbox_Password.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -95,7 +98,7 @@
             this.Textbox_Password.CustomButton.Visible = false;
             this.Textbox_Password.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.Textbox_Password.Lines = new string[0];
-            this.Textbox_Password.Location = new System.Drawing.Point(143, 228);
+            this.Textbox_Password.Location = new System.Drawing.Point(176, 500);
             this.Textbox_Password.MaxLength = 32767;
             this.Textbox_Password.Name = "Textbox_Password";
             this.Textbox_Password.PasswordChar = '*';
@@ -105,7 +108,7 @@
             this.Textbox_Password.SelectionStart = 0;
             this.Textbox_Password.ShortcutsEnabled = true;
             this.Textbox_Password.ShowClearButton = true;
-            this.Textbox_Password.Size = new System.Drawing.Size(189, 23);
+            this.Textbox_Password.Size = new System.Drawing.Size(163, 23);
             this.Textbox_Password.TabIndex = 3;
             this.Textbox_Password.UseSelectable = true;
             this.Textbox_Password.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -117,7 +120,7 @@
             this.Username.AutoScrollMinSize = new System.Drawing.Size(46, 22);
             this.Username.AutoSize = false;
             this.Username.BackColor = System.Drawing.SystemColors.Window;
-            this.Username.Location = new System.Drawing.Point(62, 120);
+            this.Username.Location = new System.Drawing.Point(71, 440);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(75, 23);
             this.Username.TabIndex = 4;
@@ -129,7 +132,7 @@
             this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(34, 22);
             this.htmlLabel2.AutoSize = false;
             this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlLabel2.Location = new System.Drawing.Point(62, 228);
+            this.htmlLabel2.Location = new System.Drawing.Point(71, 500);
             this.htmlLabel2.Name = "htmlLabel2";
             this.htmlLabel2.Size = new System.Drawing.Size(47, 23);
             this.htmlLabel2.TabIndex = 7;
@@ -138,19 +141,30 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(60, 332);
+            this.linkLabel1.Location = new System.Drawing.Point(93, 583);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(29, 12);
+            this.linkLabel1.Size = new System.Drawing.Size(53, 12);
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "注册";
+            this.linkLabel1.Text = "注册账号";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(616, 332);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 383);
+            this.ClientSize = new System.Drawing.Size(620, 628);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.htmlLabel2);
             this.Controls.Add(this.Username);
@@ -161,6 +175,7 @@
             this.Name = "Form1";
             this.Text = "欢迎来到13水";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,6 +189,7 @@
         private MetroFramework.Drawing.Html.HtmlLabel Username;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
