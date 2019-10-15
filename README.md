@@ -7,4 +7,4 @@
 Windows
 
 # 使用方法
-执行WindowsFormsMetro.exe文件
+下载安装包
