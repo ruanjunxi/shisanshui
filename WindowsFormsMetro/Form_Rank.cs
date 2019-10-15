@@ -22,6 +22,14 @@ namespace WindowsFormsMetro
             InitializeComponent();
         }
 
+        public Form_History_Combat a
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void Form_Rank_Load(object sender, EventArgs e)
         {
             //var client = new RestClient("https://api.shisanshui.rtxux.xyz/rank");
@@ -51,10 +59,20 @@ namespace WindowsFormsMetro
         }
                 /*点击即可查看该玩家的历史作战记录
                  */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DGV_rank_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int id = (int)DGV_rank.CurrentCell.Value;
-
+            if (DGV_rank.CurrentCell.ColumnIndex == 0)
+            {
+                play_info.player_ID = (int)DGV_rank.CurrentCell.Value;
+               Form_History_Combat form = new Form_History_Combat();
+               form.ShowDialog();
+            }
+            
         }
     }
 }

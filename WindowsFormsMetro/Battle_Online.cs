@@ -20,14 +20,23 @@ namespace WindowsFormsMetro
             InitializeComponent();
         }
 
+        public Sendcard Sendcard
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void Battle_Online_Load(object sender, EventArgs e)
         {
 
         }
 
-
+        
         private void skinButton1_Click(object sender, EventArgs e)  //寻找对局
         {
+            
             string Json_Repost = APIHelper.HttpPost("https://api.shisanshui.rtxux.xyz/game/open", "", User_With_Token.Token);
             JObject jo = (JObject)JsonConvert.DeserializeObject(Json_Repost);
             string Card = jo["data"]["card"].ToString();

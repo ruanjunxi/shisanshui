@@ -23,6 +23,14 @@ namespace WindowsFormsMetro
             InitButtonTooltip();
         }
 
+        public Form1 Form1
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void FormRegister_Load(object sender, EventArgs e)
         {
 

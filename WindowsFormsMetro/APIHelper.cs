@@ -33,6 +33,12 @@ namespace WindowsFormsMetro
 
         }
         // [WebMethod]
+        /// <summary>
+        /// apiget八八八八
+        /// </summary>
+        /// <param name="Url"></param>
+        /// <param name="postDataStr"></param>
+        /// <returns></returns>
         public static string HttpGet(string Url, string postDataStr)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Url);

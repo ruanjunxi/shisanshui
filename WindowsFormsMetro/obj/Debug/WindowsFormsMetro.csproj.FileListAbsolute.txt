@@ -8,7 +8,6 @@ D:\c#\practice\WindowsFormsMetro\bin\Debug\Newtonsoft.Json.dll
 D:\c#\practice\WindowsFormsMetro\bin\Debug\RestSharp.dll
 D:\c#\practice\WindowsFormsMetro\bin\Debug\Newtonsoft.Json.xml
 D:\c#\practice\WindowsFormsMetro\bin\Debug\RestSharp.xml
-D:\c#\practice\WindowsFormsMetro\obj\Debug\WindowsFormsMetro.csprojAssemblyReference.cache
 D:\c#\practice\WindowsFormsMetro\obj\Debug\WindowsFormsMetro.Form1.resources
 D:\c#\practice\WindowsFormsMetro\obj\Debug\WindowsFormsMetro.FormMain.resources
 D:\c#\practice\WindowsFormsMetro\obj\Debug\WindowsFormsMetro.FormRegister.resources
@@ -22,3 +21,7 @@ D:\c#\practice\WindowsFormsMetro\bin\Debug\CSkin.dll
 D:\c#\practice\WindowsFormsMetro\bin\Debug\CSkin.xml
 D:\c#\practice\WindowsFormsMetro\obj\Debug\WindowsFormsMetro.Sendcard.resources
 D:\c#\practice\WindowsFormsMetro\obj\Debug\WindowsFormsMetro.Form_Rank.resources
+D:\c#\practice\WindowsFormsMetro\obj\Debug\WindowsFormsMetro.Form_History_Combat.resources
+D:\c#\practice\WindowsFormsMetro\obj\Debug\WindowsFormsMetro.battle_detail.resources
+D:\c#\practice\WindowsFormsMetro\obj\Debug\WindowsFormsMetro.csprojAssemblyReference.cache
+D:\c#\practice\WindowsFormsMetro\obj\Debug\WindowsFormsMetro.military_exploits.resources

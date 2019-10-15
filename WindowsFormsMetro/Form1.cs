@@ -20,28 +20,43 @@ namespace WindowsFormsMetro
         {
             InitializeComponent();
             InitButtonTooltip();
+            this.KeyDown += new KeyEventHandler(textBox1_KeyDown);
+        }
+
+        public FormMain FormMain
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.Button_Login.Focus();
+                Button_Login_Click(this, new EventArgs());
+            }
         }
         private void InitButtonTooltip()
         {
             ToolTip ttSetp1 = new System.Windows.Forms.ToolTip();
             ttSetp1.SetToolTip(Button_Login, "点击登陆");
-            ttSetp1.SetToolTip(Button_Register, "我要注册");
+           // ttSetp1.SetToolTip(Button_Register, "我要注册");
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            Textbox_Username.Text = "ruanjunxi";
         }
+
 
         private void htmlLabel1_Click(object sender, EventArgs e)
         {
             FormRegister form = new FormRegister();
             
         }
-        private void Button_Register_Click(object sender, EventArgs e)
-        {
-            FormRegister form = new FormRegister();
-            form.ShowDialog();
-        }
+      
 
         private void Button_Login_Click(object sender, EventArgs e)
         {
@@ -82,16 +97,24 @@ namespace WindowsFormsMetro
             {
                 User_With_Token.username = user.username;
                 User_With_Token.password = user.password;
-                MessageBox.Show("登陆成功！");
+               
                 string Token = jo["data"]["token"].ToString();
-                int id = (int)jo["data"]["user_id"];
+                User_With_Token.user_id = (int)jo["data"]["user_id"];
                 User_With_Token.Token = Token;
                 //  MessageBox.Show(Token);
                 Console.Read();
+                MessageBox.Show("登陆成功！");
                 this.DialogResult = DialogResult.OK;
+                
             }
           
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormRegister form = new FormRegister();
+            form.ShowDialog();
         }
     }
 }

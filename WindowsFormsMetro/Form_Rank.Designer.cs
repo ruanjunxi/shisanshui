@@ -89,7 +89,7 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.DGV_rank.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DGV_rank.RowTemplate.Height = 23;
-            this.DGV_rank.Size = new System.Drawing.Size(351, 401);
+            this.DGV_rank.Size = new System.Drawing.Size(366, 401);
             this.DGV_rank.StandardTab = true;
             this.DGV_rank.TabIndex = 0;
             this.DGV_rank.TabStop = false;
@@ -129,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(391, 481);
+            this.ClientSize = new System.Drawing.Size(406, 481);
             this.Controls.Add(this.DGV_rank);
             this.Name = "Form_Rank";
             this.Text = "Form_Rank";
