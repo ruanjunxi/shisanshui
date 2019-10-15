@@ -24,5 +24,4 @@ D:\c#\practice\WindowsFormsMetro\obj\Release\WindowsFormsMetro.Form_History_Comb
 D:\c#\practice\WindowsFormsMetro\obj\Release\WindowsFormsMetro.Form_Rank.resources
 D:\c#\practice\WindowsFormsMetro\obj\Release\WindowsFormsMetro.military_exploits.resources
 D:\c#\practice\WindowsFormsMetro\obj\Release\WindowsFormsMetro.Sendcard.resources
-D:\c#\practice\WindowsFormsMetro\bin\Release\WindowsFormsMetro.exe.CodeAnalysisLog.xml
-D:\c#\practice\WindowsFormsMetro\bin\Release\WindowsFormsMetro.exe.lastcodeanalysissucceeded
+D:\c#\practice\WindowsFormsMetro\obj\Release\WindowsFormsMetro.csprojAssemblyReference.cache

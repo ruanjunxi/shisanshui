@@ -133,30 +133,30 @@ namespace WindowsFormsMetro
             //}
             //D:\c#\practice\WindowsFormsMetro\Resources\card\
             if (i < 3)  //前墩
-            {
+            {//D:\c#\practice\WindowsFormsMetro\Resources\413.JPG
                 i += 3;
-                PB_Pre1.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[0].ToString() + ".jpg");
-                PB_Pre_2.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[1].ToString() + ".jpg");
-                PB_Pre3.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[2].ToString() + ".jpg");
+                PB_Pre1.BackgroundImage = Image.FromFile(list[0].ToString() + ".JPG");
+                PB_Pre_2.BackgroundImage = Image.FromFile(list[1].ToString() + ".JPG");
+                PB_Pre3.BackgroundImage = Image.FromFile(list[2].ToString() + ".JPG");
             }
              if (i >= 3 && i < 8)  //中墩
             {
                 i += 5;
-                PB_Mid_1.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\"+list[3].ToString()+".jpg");
-                PB_Mid2.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[4].ToString() + ".jpg");
-                PB_Mid3.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[5].ToString() + ".jpg");
-                PB_Mid4.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[6].ToString() + ".jpg");
-                PB_Mid5.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[7].ToString() + ".jpg");
+                PB_Mid_1.BackgroundImage = Image.FromFile(list[3].ToString()+ ".JPG");
+                PB_Mid2.BackgroundImage = Image.FromFile(list[4].ToString() + ".JPG");
+                PB_Mid3.BackgroundImage = Image.FromFile(list[5].ToString() + ".JPG");
+                PB_Mid4.BackgroundImage = Image.FromFile(list[6].ToString() + ".JPG");
+                PB_Mid5.BackgroundImage = Image.FromFile(list[7].ToString() + ".JPG");
                     
             }
             if(i>=8)   //后墩
             {
                 i += 5;
-                PB_Aft1.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[8].ToString() + ".jpg");
-                PB_Aft2.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[9].ToString() + ".jpg");
-                PB_Aft3.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[10].ToString() + ".jpg");
-                PB_Aft4.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[11].ToString() + ".jpg");
-                PB_Aft5.BackgroundImage = Image.FromFile("D:\\c#\\practice\\WindowsFormsMetro\\Resources\\card\\" + list[12].ToString() + ".jpg");
+                PB_Aft1.BackgroundImage = Image.FromFile(list[8].ToString() + ".JPG");
+                PB_Aft2.BackgroundImage = Image.FromFile(list[9].ToString() + ".JPG");
+                PB_Aft3.BackgroundImage = Image.FromFile( list[10].ToString() + ".JPG");
+                PB_Aft4.BackgroundImage = Image.FromFile(list[11].ToString() + ".JPG");
+                PB_Aft5.BackgroundImage = Image.FromFile( list[12].ToString() + ".JPG");
             }
         }
     }
